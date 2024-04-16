@@ -49,7 +49,7 @@ def login():
             )
 
             if len(rows) != 1 or not check_password_hash(
-                rows[0]["password_hash"], password
+                rows[0]["password_HASH"], password
             ):
                 error = "invalid username and/or password"
 
