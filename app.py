@@ -27,7 +27,7 @@ def add_header(response):
 @login_required
 def home():
     # Home screen
-    return render_template("home.html")
+    return render_template("layout.html")
 
 
 @app.route("/login", methods=["GET", "POST"])
@@ -103,3 +103,6 @@ def register():
 def logout():
     session.clear()
     return redirect("/")
+
+if __name__ == '__main__':
+    app.run(debug=True)

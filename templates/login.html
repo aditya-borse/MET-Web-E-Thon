@@ -30,9 +30,9 @@
     </div>
     <div class="login-side second-content">
         <div class="error msg">
-            <!-- {% if error %} -->
-            <!-- <p class="error">{{ error }}</p> -->
-            <!-- {% endif %} -->
+             {% if error %}
+            <p class="error">{{ error }}</p>
+             {% endif %}
         </div>
         <form action="/login" method="post" class="form">
             <div class="form">

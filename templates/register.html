@@ -29,7 +29,7 @@
         </div>
     </div>
     <div class="register-side second-content">
-        <!-- <div class="error msg">
+        <div class="error msg">
             {% if error %}
             <p class="error">{{ error }}</p>
             {% endif %}
@@ -96,9 +96,9 @@
                 <input type="submit" value="Register" />
             </div>
         </form>
-        <!-- {% if success %} -->
+        {% if success %} 
         <a href="/login" class="continue-to-login">Continue to login</a>
-        <!--{% endif %} -->
+        {% endif %}
     </div>
 </body>
 
